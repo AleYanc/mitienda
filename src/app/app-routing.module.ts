@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { mainRoutes } from './routes/main-routes';
 
 const routes: Routes = [
-  mainRoutes
+  mainRoutes,
+  { path: '', redirectTo: 'panel-de-control', pathMatch: 'full' }
 ];
 
 @NgModule({

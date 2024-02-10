@@ -4,18 +4,22 @@ import { CommonModule } from '@angular/common';
 import { MyStoreRoutingModule } from './my-store-routing.module';
 import { DashboardContainerComponent } from './dashboard-container/dashboard-container.component';
 import { TopInfoComponent } from './top-info/top-info.component';
-import { DashboardActionsComponent } from './dashboard-actions/dashboard-actions.component';
-
+import { ButtonModule } from 'primeng/button';
+import { ShutdownStoreComponent } from './shutdown-store/shutdown-store.component';
+import { DashboardStatisticsComponent } from './dashboard-statistics/dashboard-statistics.component';
 
 @NgModule({
   declarations: [
     DashboardContainerComponent,
     TopInfoComponent,
-    DashboardActionsComponent
+    ShutdownStoreComponent,
+    DashboardStatisticsComponent
   ],
   imports: [
     CommonModule,
-    MyStoreRoutingModule
+    MyStoreRoutingModule,
+    CommonModule,
+    ButtonModule
   ]
 })
 export class MyStoreModule { }
